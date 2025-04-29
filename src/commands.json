@@ -1,9 +1,7 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "./commands-schema.json",
     "welcome": "👋 Welcome to Project Builder CLI - Type 'project --help' for usage",
-    "variables": {
-        "projectName": "demo-app"
-    },
+    "variables": {},
     "commands": {
         "create": {
             "description": "Create a new project with customizable settings",
@@ -39,12 +37,12 @@
                 },
                 {
                     "component": "progressBar",
-                    "output": "Creating ${argv.type} project with ${answers.framework}...",
+                    "output": "Creating {{type}} project with {{framework}}...",
                     "duration": 2000
                 },
                 {
                     "component": "text",
-                    "output": "✅ Project '${argv.name}' created successfully with ${answers.framework}!"
+                    "output": "✅ Project '{{name}}' created successfully with {{framework}}!"
                 }
             ]
         }
