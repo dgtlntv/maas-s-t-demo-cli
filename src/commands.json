@@ -43,7 +43,7 @@
                 {
                     "component": "text",
                     "output": "Hello MAAS team! :)"
-                }
+                },
                 {
                     "component": "text",
                     "output": "✅ Project '{{name}}' created successfully with {{framework}}!"
